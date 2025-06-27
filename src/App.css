@@ -1,0 +1,130 @@
+.farm-bg {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #e6f2d6 0%, #b7d7a8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.form-container {
+  background: rgba(255,255,255,0.95);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60,80,40,0.15);
+  padding: 2.5rem 2rem;
+  min-width: 340px;
+  max-width: 90vw;
+}
+
+.step-card, .result-card, .buildup-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation-area {
+  margin-bottom: 1.5rem;
+  min-height: 100px;
+}
+
+.step-label {
+  font-size: 1.3rem;
+  color: #3e5c2c;
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+
+.step-input {
+  padding: 0.7rem 1rem;
+  border: 2px solid #b7d7a8;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  background: #f8fff0;
+  color: #2d3a1a;
+}
+
+.next-btn {
+  background: #7bb661;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.next-btn:disabled {
+  background: #b7d7a8;
+  cursor: not-allowed;
+}
+.next-btn:not(:disabled):hover {
+  background: #5e9441;
+}
+
+.buildup-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buildup-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #3e5c2c;
+  font-weight: bold;
+}
+
+.plant-growth-sequence {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.plant-stage {
+  width: 40px;
+  height: 80px;
+  border-radius: 20px 20px 10px 10px;
+  background: #b7d7a8;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(60,80,40,0.08);
+}
+.plant-stage.seed {
+  background: #a67c52;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-top: 56px;
+}
+.plant-stage.watering {
+  background: #b7d7a8;
+  border-bottom: 6px solid #4fc3f7;
+}
+.plant-stage.sprout {
+  background: #7bb661;
+  border-radius: 20px 20px 10px 10px;
+  margin-top: 24px;
+}
+.plant-stage.growing {
+  background: #4e944f;
+  height: 60px;
+  margin-top: 10px;
+}
+.plant-stage.harvest {
+  background: #ffe066;
+  border-radius: 50% 50% 30% 30%;
+  width: 48px;
+  height: 48px;
+  margin-top: 0;
+  border: 2px solid #b7d7a8;
+}
+
+.result-title {
+  color: #3e5c2c;
+  margin-bottom: 1rem;
+}
+.result-output {
+  font-size: 1.5rem;
+  color: #4e944f;
+  font-weight: bold;
+}
